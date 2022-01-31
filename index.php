@@ -23,6 +23,11 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <meta name="theme-color" content="#ffffff">
+<style>
+  .title{
+    font-size:39px !important;
+  }
+</style>
   <head>
    
 </head>
@@ -43,7 +48,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a class="scroll" href="#top">Home <span class="sr-only">(current)</span></a></li>
           <li><a class="scroll" href="#about">About Me</a></li>
-          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="scroll" href="#portfolio" onclick="toastr.info('This page will be available soon')">Portfolio</a></li>
           <li><button class="btn td-btn small outline pink" data-toggle="modal" data-target="#contactModal">Contact</button></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -57,12 +62,12 @@
           <img class="img-responsive center-block logo rounded" style="border-radius:120px" src="images/image.jpg" alt="TD Logo">
         </div>
         <div class="col-xs-12">
-          <h1 class="title">Hi! My name is Joydeep Bandyopadhyay</h1>
+          <h1 class="title">Hi there! <br> I am Joydeep Bandyopadhyay</h1>
           <p> <?php
                   $connect = new Helper;
                   // echo $connect->contacts();
               ?></p>
-          <p>I like to develop user-friendly websites.</p>
+          <p>I develop user-friendly websites.</p>
           <p>Nice to meet you.</p>
           <a class="btn td-btn outline green scroll mt-30" href="#content" title="Learn more about me!"><span class="glyphicon glyphicon-triangle-bottom"></span> Learn more</a>
         </div>
@@ -84,7 +89,7 @@
         </div>
         <div class="col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-0 col-lg-6 text-left">
           <h4>Hello there! I'm a backend developer working in Kolkata, West Bengal India.</h4>
-          <p>Seasoned professional with 6 years of experience in php. Expert in HTML, PHP, Javascript, MySQL, PHP MVC & recently working on PHP Laravel with 3+ years of experience.</p>
+          <p>Seasoned professional with 6+ years of total experience in PHP & MySQL. Expert in HTML, PHP, Javascript, MySQL, PHP MVC & recently working on PHP Laravel with 3+ years of experience.</p>
           <p>Currently, I am working with Shyam Steel Industries and providing them support in coding, maintaining and deploying CRM and i challenge to keep my skills sharp. When I'm not busy, you can find me obsessing over finding new challenging activities like trying to impplement new stuff in new coding languages like Angular, React Js, and many more. I tend to switch things up every few months, so if you want to know what I'm up to, just <a class="scroll" href="#follow-me">follow me!</a></p>
         </div>
       </div>
@@ -107,7 +112,7 @@
         </div>
         <div class="col-sm-3 col-lg-2 mb-30">
           <img class="img-responsive center-block icon" src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/work/star-icon.png?raw=true" alt="Identity and Branding Icon">
-          <p>Identity &amp; Branding</p>
+          <p>Client Interactions</p>
         </div>
       </div>
       <div class="row">
@@ -117,7 +122,7 @@
       </div>
     </section>
     <!-- Portfolio Section -->
-    <section id="portfolio" class="row bg-star-y d-none">
+    <section id="portfolio" class="row bg-star-y">
       <div class="row">
         <div class="col-xs-12">
           <h1 class="mb-60">Portfolio</h1>
@@ -539,4 +544,6 @@
         }
       })
   })
+
+  $("#portfolio").css('display','none')
 </script>
