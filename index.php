@@ -1,9 +1,9 @@
 <?php include ('config.php') ?>
 <html>
-  <title>JDBProjects, Portfolio Projects, Admin Panel, Free Demo, Low Price Website Development </title>
+  <title>JDB Projects | Portfolio Website</title>
   <meta charset="UTF-8">
-   <meta name="description" content="JDBProjects is a portfolio and showcase site for projects on different segments, browse thought to know more">
-  <meta name="keywords" content="projects, jdbprojects, portfolio, develop project, software development, website development, cheap website development">
+   <meta name="description" content="JDBProjects is my own portfolio site showcasing array of projects on different segments, browse thought to know more">
+  <meta name="keywords" content="projects, jdbprojects, portfolio, develop project, software development, website development">
   <meta name="author" content="Joydeep Bandyopadhyay">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
